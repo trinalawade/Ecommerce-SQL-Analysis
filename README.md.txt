@@ -128,4 +128,4 @@ Ecommerce-SQL-Analysis/
 
 Author
 
-Triveni
+Triveni Nalawade

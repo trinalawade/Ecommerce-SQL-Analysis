@@ -1,0 +1,255 @@
+/*=====================================================
+        E-COMMERCE SALES ANALYSIS PROJECT
+
+        SQL BUSINESS ANALYSIS QUERIES
+
+        Author: Triveni
+=====================================================*/
+
+SELECT COUNT(*) AS total_customers
+FROM Customers;
+
+SELECT COUNT(*) AS total_products
+FROM Products;
+
+SELECT COUNT(*) AS total_orders
+FROM Orders;
+
+Revenue = Quantity × Unit Price
+
+SELECT 
+SUM(quantity * unit_price) AS total_revenue
+FROM Order_Items;
+
+SELECT 
+ROUND(AVG(total_amount),2) AS average_order_value
+FROM
+(
+SELECT 
+order_id,
+SUM(quantity * unit_price) total_amount
+FROM Order_Items
+GROUP BY order_id
+);
+
+SELECT
+TO_CHAR(o.order_date,'YYYY-MM') AS month,
+SUM(oi.quantity * oi.unit_price) AS revenue
+FROM Orders o
+JOIN Order_Items oi
+ON o.order_id = oi.order_id
+GROUP BY TO_CHAR(o.order_date,'YYYY-MM')
+ORDER BY month;
+
+------------------------------------------------------
+-- QUERY 7: TOP 10 CUSTOMERS BY SPENDING
+------------------------------------------------------
+
+SELECT *
+FROM
+(
+SELECT
+c.customer_id,
+c.customer_name,
+SUM(oi.quantity * oi.unit_price) AS total_spent
+FROM Customers c
+JOIN Orders o
+ON c.customer_id = o.customer_id
+JOIN Order_Items oi
+ON o.order_id = oi.order_id
+GROUP BY
+c.customer_id,
+c.customer_name
+ORDER BY total_spent DESC
+)
+WHERE ROWNUM <= 10;
+
+------------------------------------------------------
+-- QUERY 8: BEST SELLING PRODUCTS
+------------------------------------------------------
+
+SELECT
+p.product_id,
+p.product_name,
+SUM(oi.quantity) AS total_quantity_sold
+FROM Products p
+JOIN Order_Items oi
+ON p.product_id = oi.product_id
+GROUP BY
+p.product_id,
+p.product_name
+ORDER BY total_quantity_sold DESC;
+
+------------------------------------------------------
+-- QUERY 9: PRODUCT REVENUE ANALYSIS
+------------------------------------------------------
+
+SELECT
+p.product_name,
+SUM(oi.quantity * oi.unit_price) AS revenue
+FROM Products p
+JOIN Order_Items oi
+ON p.product_id = oi.product_id
+GROUP BY p.product_name
+ORDER BY revenue DESC;
+
+------------------------------------------------------
+-- QUERY 10: CATEGORY REVENUE
+------------------------------------------------------
+
+SELECT
+c.category_name,
+SUM(oi.quantity * oi.unit_price) AS revenue
+FROM Categories c
+JOIN Products p
+ON c.category_id = p.category_id
+JOIN Order_Items oi
+ON p.product_id = oi.product_id
+GROUP BY c.category_name
+ORDER BY revenue DESC;
+
+------------------------------------------------------
+-- QUERY 11: PAYMENT ANALYSIS
+------------------------------------------------------
+
+SELECT
+payment_method,
+COUNT(*) AS total_transactions,
+SUM(amount) AS total_amount
+FROM Payments
+GROUP BY payment_method
+ORDER BY total_amount DESC;
+
+------------------------------------------------------
+-- QUERY 12: ORDER STATUS ANALYSIS
+------------------------------------------------------
+
+SELECT
+order_status,
+COUNT(*) AS total_orders
+FROM Orders
+GROUP BY order_status;
+
+------------------------------------------------------
+-- QUERY 13: REPEAT CUSTOMERS
+------------------------------------------------------
+
+SELECT
+c.customer_id,
+c.customer_name,
+COUNT(o.order_id) AS total_orders
+FROM Customers c
+JOIN Orders o
+ON c.customer_id = o.customer_id
+GROUP BY
+c.customer_id,
+c.customer_name
+HAVING COUNT(o.order_id) > 1
+ORDER BY total_orders DESC;
+
+------------------------------------------------------
+-- QUERY 14: CUSTOMER RETENTION RATE
+------------------------------------------------------
+
+WITH repeat_customers AS
+(
+    SELECT customer_id
+    FROM Orders
+    GROUP BY customer_id
+    HAVING COUNT(order_id) > 1
+),
+total_customers AS
+(
+    SELECT COUNT(*) AS total_count
+    FROM Customers
+)
+SELECT
+ROUND(
+    (COUNT(rc.customer_id) * 100) / tc.total_count,
+    2
+) AS retention_percentage
+FROM repeat_customers rc
+CROSS JOIN total_customers tc
+GROUP BY tc.total_count;
+
+------------------------------------------------------
+-- QUERY 15: CUSTOMER LIFETIME VALUE
+------------------------------------------------------
+
+SELECT
+c.customer_id,
+c.customer_name,
+SUM(oi.quantity * oi.unit_price) AS lifetime_value
+FROM Customers c
+JOIN Orders o
+ON c.customer_id = o.customer_id
+JOIN Order_Items oi
+ON o.order_id = oi.order_id
+GROUP BY
+c.customer_id,
+c.customer_name
+ORDER BY lifetime_value DESC;
+
+------------------------------------------------------
+-- QUERY 16: HIGHEST REVENUE MONTH
+------------------------------------------------------
+
+SELECT *
+FROM
+(
+SELECT
+TO_CHAR(o.order_date,'YYYY-MM') AS month,
+SUM(oi.quantity * oi.unit_price) AS revenue
+FROM Orders o
+JOIN Order_Items oi
+ON o.order_id = oi.order_id
+GROUP BY TO_CHAR(o.order_date,'YYYY-MM')
+ORDER BY revenue DESC
+)
+WHERE ROWNUM = 1;
+
+------------------------------------------------------
+-- QUERY 17: PRODUCT RANKING USING RANK()
+------------------------------------------------------
+
+SELECT
+product_name,
+revenue,
+RANK() OVER
+(
+ORDER BY revenue DESC
+) AS product_rank
+FROM
+(
+SELECT
+p.product_name,
+SUM(oi.quantity * oi.unit_price) AS revenue
+FROM Products p
+JOIN Order_Items oi
+ON p.product_id = oi.product_id
+GROUP BY p.product_name
+);
+
+------------------------------------------------------
+-- QUERY 18: CATEGORY RANKING USING DENSE_RANK()
+------------------------------------------------------
+
+SELECT
+category_name,
+revenue,
+DENSE_RANK() OVER
+(
+ORDER BY revenue DESC
+) AS category_rank
+FROM
+(
+SELECT
+c.category_name,
+SUM(oi.quantity * oi.unit_price) AS revenue
+FROM Categories c
+JOIN Products p
+ON c.category_id = p.category_id
+JOIN Order_Items oi
+ON p.product_id = oi.product_id
+GROUP BY c.category_name
+);

@@ -1,0 +1,2755 @@
+/*=====================================================
+        E-COMMERCE SALES ANALYSIS SAMPLE DATA
+=====================================================*/
+
+
+------------------------------------------------------
+-- PART 2.1 : CATEGORIES DATA
+------------------------------------------------------
+
+INSERT INTO Categories VALUES (1,'Electronics');
+INSERT INTO Categories VALUES (2,'Fashion');
+INSERT INTO Categories VALUES (3,'Home');
+INSERT INTO Categories VALUES (4,'Books');
+INSERT INTO Categories VALUES (5,'Sports');
+INSERT INTO Categories VALUES (6,'Beauty');
+INSERT INTO Categories VALUES (7,'Toys');
+INSERT INTO Categories VALUES (8,'Groceries');
+
+COMMIT;
+
+------------------------------------------------------
+-- PART 2.2 : SHIPPERS DATA
+------------------------------------------------------
+
+INSERT INTO Shippers VALUES (1,'Blue Dart','9876543210');
+INSERT INTO Shippers VALUES (2,'DTDC','9876543211');
+INSERT INTO Shippers VALUES (3,'Delhivery','9876543212');
+INSERT INTO Shippers VALUES (4,'India Post','9876543213');
+INSERT INTO Shippers VALUES (5,'Ekart','9876543214');
+
+COMMIT;
+
+------------------------------------------------------
+-- PART 2.3 : CUSTOMERS DATA
+------------------------------------------------------
+
+INSERT INTO Customers VALUES
+(1,'Rahul Sharma','rahul@gmail.com','9876500001','Pune',DATE '2025-01-10');
+
+INSERT INTO Customers VALUES
+(2,'Priya Patil','priya@gmail.com','9876500002','Mumbai',DATE '2025-01-12');
+
+INSERT INTO Customers VALUES
+(3,'Amit Kulkarni','amit@gmail.com','9876500003','Satara',DATE '2025-01-15');
+
+INSERT INTO Customers VALUES
+(4,'Sneha Joshi','sneha@gmail.com','9876500004','Pune',DATE '2025-01-20');
+
+INSERT INTO Customers VALUES
+(5,'Rohan Deshmukh','rohan@gmail.com','9876500005','Nashik',DATE '2025-01-22');
+
+INSERT INTO Customers VALUES
+(6,'Neha More','neha@gmail.com','9876500006','Mumbai',DATE '2025-02-01');
+
+INSERT INTO Customers VALUES
+(7,'Karan Singh','karan@gmail.com','9876500007','Delhi',DATE '2025-02-05');
+
+INSERT INTO Customers VALUES
+(8,'Pooja Shah','pooja@gmail.com','9876500008','Ahmedabad',DATE '2025-02-08');
+
+INSERT INTO Customers VALUES
+(9,'Arjun Mehta','arjun@gmail.com','9876500009','Pune',DATE '2025-02-12');
+
+INSERT INTO Customers VALUES
+(10,'Anjali Verma','anjali@gmail.com','9876500010','Delhi',DATE '2025-02-15');
+
+INSERT INTO Customers VALUES
+(11,'Vikas Patil','vikas@gmail.com','9876500011','Kolhapur',DATE '2025-02-18');
+
+INSERT INTO Customers VALUES
+(12,'Meera Joshi','meera@gmail.com','9876500012','Pune',DATE '2025-02-20');
+
+INSERT INTO Customers VALUES
+(13,'Sahil Kumar','sahil@gmail.com','9876500013','Delhi',DATE '2025-02-22');
+
+INSERT INTO Customers VALUES
+(14,'Riya Desai','riya@gmail.com','9876500014','Mumbai',DATE '2025-02-25');
+
+INSERT INTO Customers VALUES
+(15,'Akash More','akash@gmail.com','9876500015','Nashik',DATE '2025-03-01');
+
+INSERT INTO Customers VALUES
+(16,'Nikita Sharma','nikita@gmail.com','9876500016','Pune',DATE '2025-03-03');
+
+INSERT INTO Customers VALUES
+(17,'Manish Shah','manish@gmail.com','9876500017','Ahmedabad',DATE '2025-03-05');
+
+INSERT INTO Customers VALUES
+(18,'Kavita Singh','kavita@gmail.com','9876500018','Delhi',DATE '2025-03-07');
+
+INSERT INTO Customers VALUES
+(19,'Raj Verma','raj@gmail.com','9876500019','Mumbai',DATE '2025-03-10');
+
+INSERT INTO Customers VALUES
+(20,'Aarti Kulkarni','aarti@gmail.com','9876500020','Satara',DATE '2025-03-12');
+
+INSERT INTO Customers VALUES
+(21,'Omkar Jadhav','omkar@gmail.com','9876500021','Pune',DATE '2025-03-15');
+
+INSERT INTO Customers VALUES
+(22,'Snehal Pawar','snehal@gmail.com','9876500022','Kolhapur',DATE '2025-03-18');
+
+INSERT INTO Customers VALUES
+(23,'Harsh Mehta','harsh@gmail.com','9876500023','Mumbai',DATE '2025-03-20');
+
+INSERT INTO Customers VALUES
+(24,'Divya Nair','divya@gmail.com','9876500024','Bangalore',DATE '2025-03-22');
+
+INSERT INTO Customers VALUES
+(25,'Yash Gupta','yash@gmail.com','9876500025','Delhi',DATE '2025-03-25');
+
+INSERT INTO Customers VALUES
+(26,'Ishita Rao','ishita@gmail.com','9876500026','Bangalore',DATE '2025-03-28');
+
+INSERT INTO Customers VALUES
+(27,'Nikhil Joshi','nikhil@gmail.com','9876500027','Pune',DATE '2025-04-01');
+
+INSERT INTO Customers VALUES
+(28,'Tanvi Patil','tanvi@gmail.com','9876500028','Mumbai',DATE '2025-04-03');
+
+INSERT INTO Customers VALUES
+(29,'Aditya Shah','aditya@gmail.com','9876500029','Ahmedabad',DATE '2025-04-05');
+
+INSERT INTO Customers VALUES
+(30,'Pallavi More','pallavi@gmail.com','9876500030','Nashik',DATE '2025-04-08');
+
+INSERT INTO Customers VALUES
+(31,'Ritesh Kumar','ritesh@gmail.com','9876500031','Delhi',DATE '2025-04-10');
+
+INSERT INTO Customers VALUES
+(32,'Shruti Deshmukh','shruti@gmail.com','9876500032','Pune',DATE '2025-04-12');
+
+INSERT INTO Customers VALUES
+(33,'Aniket Joshi','aniket@gmail.com','9876500033','Satara',DATE '2025-04-15');
+
+INSERT INTO Customers VALUES
+(34,'Komal Shah','komal@gmail.com','9876500034','Mumbai',DATE '2025-04-18');
+
+INSERT INTO Customers VALUES
+(35,'Rahul More','rahulmore@gmail.com','9876500035','Kolhapur',DATE '2025-04-20');
+
+INSERT INTO Customers VALUES
+(36,'Sneha Patil','snehapatil@gmail.com','9876500036','Pune',DATE '2025-04-22');
+
+INSERT INTO Customers VALUES
+(37,'Varun Singh','varun@gmail.com','9876500037','Delhi',DATE '2025-04-25');
+
+INSERT INTO Customers VALUES
+(38,'Priyanka Nair','priyanka@gmail.com','9876500038','Bangalore',DATE '2025-04-28');
+
+INSERT INTO Customers VALUES
+(39,'Kunal Mehta','kunal@gmail.com','9876500039','Mumbai',DATE '2025-05-01');
+
+INSERT INTO Customers VALUES
+(40,'Neha Shah','nehashah@gmail.com','9876500040','Ahmedabad',DATE '2025-05-03');
+
+INSERT INTO Customers VALUES
+(41,'Aman Verma','aman@gmail.com','9876500041','Delhi',DATE '2025-05-05');
+
+INSERT INTO Customers VALUES
+(42,'Sakshi Gupta','sakshi@gmail.com','9876500042','Pune',DATE '2025-05-08');
+
+INSERT INTO Customers VALUES
+(43,'Rohit Jadhav','rohit@gmail.com','9876500043','Satara',DATE '2025-05-10');
+
+INSERT INTO Customers VALUES
+(44,'Priti Kulkarni','priti@gmail.com','9876500044','Kolhapur',DATE '2025-05-12');
+
+INSERT INTO Customers VALUES
+(45,'Abhishek Sharma','abhishek@gmail.com','9876500045','Mumbai',DATE '2025-05-15');
+
+INSERT INTO Customers VALUES
+(46,'Mansi Joshi','mansi@gmail.com','9876500046','Pune',DATE '2025-05-18');
+
+INSERT INTO Customers VALUES
+(47,'Deepak Patil','deepak@gmail.com','9876500047','Nashik',DATE '2025-05-20');
+
+INSERT INTO Customers VALUES
+(48,'Ananya Shah','ananya@gmail.com','9876500048','Ahmedabad',DATE '2025-05-22');
+
+INSERT INTO Customers VALUES
+(49,'Siddharth Rao','siddharth@gmail.com','9876500049','Bangalore',DATE '2025-05-25');
+
+INSERT INTO Customers VALUES
+(50,'Kiran More','kiran@gmail.com','9876500050','Pune',DATE '2025-05-28');
+
+COMMIT;
+
+
+------------------------------------------------------
+-- PART 2.4 : PRODUCTS DATA
+------------------------------------------------------
+
+INSERT INTO Products VALUES
+(1,'iPhone 15',1,70000,50);
+
+INSERT INTO Products VALUES
+(2,'Samsung Galaxy S24',1,65000,40);
+
+INSERT INTO Products VALUES
+(3,'Dell Laptop',1,55000,30);
+
+INSERT INTO Products VALUES
+(4,'HP Laptop',1,50000,25);
+
+INSERT INTO Products VALUES
+(5,'Wireless Headphones',1,5000,100);
+
+INSERT INTO Products VALUES
+(6,'Men T-Shirt',2,800,200);
+
+INSERT INTO Products VALUES
+(7,'Women Dress',2,1500,150);
+
+INSERT INTO Products VALUES
+(8,'Jeans',2,1200,120);
+
+INSERT INTO Products VALUES
+(9,'Sports Shoes',5,3000,80);
+
+INSERT INTO Products VALUES
+(10,'Cricket Bat',5,2500,60);
+
+INSERT INTO Products VALUES
+(11,'Football',5,1000,100);
+
+INSERT INTO Products VALUES
+(12,'Mixer Grinder',3,4000,50);
+
+INSERT INTO Products VALUES
+(13,'Microwave Oven',3,12000,30);
+
+INSERT INTO Products VALUES
+(14,'Office Chair',3,7000,40);
+
+INSERT INTO Products VALUES
+(15,'Python Programming Book',4,600,100);
+
+INSERT INTO Products VALUES
+(16,'Face Cream',6,900,120);
+
+INSERT INTO Products VALUES
+(17,'Perfume',6,2500,70);
+
+INSERT INTO Products VALUES
+(18,'Lipstick',6,700,150);
+
+INSERT INTO Products VALUES
+(19,'Toy Car',7,800,100);
+
+INSERT INTO Products VALUES
+(20,'Building Blocks',7,1200,80);
+
+INSERT INTO Products VALUES
+(21,'Remote Control Car',7,2000,60);
+
+INSERT INTO Products VALUES
+(22,'Rice Bag 10kg',8,700,200);
+
+INSERT INTO Products VALUES
+(23,'Cooking Oil 5L',8,800,180);
+
+INSERT INTO Products VALUES
+(24,'Coffee Powder',8,400,150);
+
+INSERT INTO Products VALUES
+(25,'Smart Watch',1,8000,50);
+
+INSERT INTO Products VALUES
+(26,'Tablet',1,30000,35);
+
+INSERT INTO Products VALUES
+(27,'Keyboard',1,1500,100);
+
+INSERT INTO Products VALUES
+(28,'Study Table',3,6000,40);
+
+INSERT INTO Products VALUES
+(29,'Novel Book',4,500,90);
+
+INSERT INTO Products VALUES
+(30,'Yoga Mat',5,1000,120);
+
+COMMIT;
+
+------------------------------------------------------
+-- PART 2.5 : ORDERS DATA (1-200)
+------------------------------------------------------
+
+INSERT INTO Orders VALUES
+(1,1,DATE '2025-01-15',1,'Delivered');
+
+INSERT INTO Orders VALUES
+(2,2,DATE '2025-01-16',2,'Delivered');
+
+INSERT INTO Orders VALUES
+(3,3,DATE '2025-01-18',3,'Shipped');
+
+INSERT INTO Orders VALUES
+(4,4,DATE '2025-01-20',1,'Delivered');
+
+INSERT INTO Orders VALUES
+(5,5,DATE '2025-01-22',4,'Pending');
+
+INSERT INTO Orders VALUES
+(6,6,DATE '2025-01-25',2,'Delivered');
+
+INSERT INTO Orders VALUES
+(7,7,DATE '2025-01-28',5,'Shipped');
+
+INSERT INTO Orders VALUES
+(8,8,DATE '2025-02-01',3,'Delivered');
+
+INSERT INTO Orders VALUES
+(9,9,DATE '2025-02-03',1,'Pending');
+
+INSERT INTO Orders VALUES
+(10,10,DATE '2025-02-05',4,'Delivered');
+
+INSERT INTO Orders VALUES
+(11,11,DATE '2025-02-08',2,'Delivered');
+
+INSERT INTO Orders VALUES
+(12,12,DATE '2025-02-10',3,'Shipped');
+
+INSERT INTO Orders VALUES
+(13,13,DATE '2025-02-12',1,'Delivered');
+
+INSERT INTO Orders VALUES
+(14,14,DATE '2025-02-15',5,'Pending');
+
+INSERT INTO Orders VALUES
+(15,15,DATE '2025-02-18',4,'Delivered');
+
+INSERT INTO Orders VALUES
+(16,16,DATE '2025-02-20',2,'Shipped');
+
+INSERT INTO Orders VALUES
+(17,17,DATE '2025-02-22',1,'Delivered');
+
+INSERT INTO Orders VALUES
+(18,18,DATE '2025-02-25',3,'Pending');
+
+INSERT INTO Orders VALUES
+(19,19,DATE '2025-02-28',4,'Delivered');
+
+INSERT INTO Orders VALUES
+(20,20,DATE '2025-03-01',5,'Shipped');
+
+INSERT INTO Orders VALUES
+(21,21,DATE '2025-03-03',1,'Delivered');
+
+INSERT INTO Orders VALUES
+(22,22,DATE '2025-03-05',2,'Pending');
+
+INSERT INTO Orders VALUES
+(23,23,DATE '2025-03-08',3,'Delivered');
+
+INSERT INTO Orders VALUES
+(24,24,DATE '2025-03-10',4,'Shipped');
+
+INSERT INTO Orders VALUES
+(25,25,DATE '2025-03-12',5,'Delivered');
+
+INSERT INTO Orders VALUES
+(26,26,DATE '2025-03-15',1,'Pending');
+
+INSERT INTO Orders VALUES
+(27,27,DATE '2025-03-18',2,'Delivered');
+
+INSERT INTO Orders VALUES
+(28,28,DATE '2025-03-20',3,'Shipped');
+
+INSERT INTO Orders VALUES
+(29,29,DATE '2025-03-22',4,'Delivered');
+
+INSERT INTO Orders VALUES
+(30,30,DATE '2025-03-25',5,'Pending');
+
+INSERT INTO Orders VALUES
+(31,31,DATE '2025-03-28',1,'Delivered');
+
+INSERT INTO Orders VALUES
+(32,32,DATE '2025-04-01',2,'Shipped');
+
+INSERT INTO Orders VALUES
+(33,33,DATE '2025-04-03',3,'Delivered');
+
+INSERT INTO Orders VALUES
+(34,34,DATE '2025-04-05',4,'Pending');
+
+INSERT INTO Orders VALUES
+(35,35,DATE '2025-04-08',5,'Delivered');
+
+INSERT INTO Orders VALUES
+(36,36,DATE '2025-04-10',1,'Shipped');
+
+INSERT INTO Orders VALUES
+(37,37,DATE '2025-04-12',2,'Delivered');
+
+INSERT INTO Orders VALUES
+(38,38,DATE '2025-04-15',3,'Pending');
+
+INSERT INTO Orders VALUES
+(39,39,DATE '2025-04-18',4,'Delivered');
+
+INSERT INTO Orders VALUES
+(40,40,DATE '2025-04-20',5,'Shipped');
+
+INSERT INTO Orders VALUES
+(41,41,DATE '2025-04-22',1,'Delivered');
+
+INSERT INTO Orders VALUES
+(42,42,DATE '2025-04-25',2,'Pending');
+
+INSERT INTO Orders VALUES
+(43,43,DATE '2025-04-28',3,'Delivered');
+
+INSERT INTO Orders VALUES
+(44,44,DATE '2025-05-01',4,'Shipped');
+
+INSERT INTO Orders VALUES
+(45,45,DATE '2025-05-03',5,'Delivered');
+
+INSERT INTO Orders VALUES
+(46,46,DATE '2025-05-05',1,'Pending');
+
+INSERT INTO Orders VALUES
+(47,47,DATE '2025-05-08',2,'Delivered');
+
+INSERT INTO Orders VALUES
+(48,48,DATE '2025-05-10',3,'Shipped');
+
+INSERT INTO Orders VALUES
+(49,49,DATE '2025-05-12',4,'Delivered');
+
+INSERT INTO Orders VALUES
+(50,50,DATE '2025-05-15',5,'Pending');
+
+INSERT INTO Orders VALUES
+(51,1,DATE '2025-05-15',1,'Delivered');
+
+INSERT INTO Orders VALUES
+(52,2,DATE '2025-05-18',2,'Shipped');
+
+INSERT INTO Orders VALUES
+(53,3,DATE '2025-05-20',3,'Delivered');
+
+INSERT INTO Orders VALUES
+(54,4,DATE '2025-05-22',4,'Pending');
+
+INSERT INTO Orders VALUES
+(55,5,DATE '2025-05-25',5,'Delivered');
+
+INSERT INTO Orders VALUES
+(56,6,DATE '2025-05-28',1,'Shipped');
+
+INSERT INTO Orders VALUES
+(57,7,DATE '2025-06-01',2,'Delivered');
+
+INSERT INTO Orders VALUES
+(58,8,DATE '2025-06-03',3,'Pending');
+
+INSERT INTO Orders VALUES
+(59,9,DATE '2025-06-05',4,'Delivered');
+
+INSERT INTO Orders VALUES
+(60,10,DATE '2025-06-08',5,'Shipped');
+
+INSERT INTO Orders VALUES
+(61,11,DATE '2025-06-10',1,'Delivered');
+
+INSERT INTO Orders VALUES
+(62,12,DATE '2025-06-12',2,'Pending');
+
+INSERT INTO Orders VALUES
+(63,13,DATE '2025-06-15',3,'Delivered');
+
+INSERT INTO Orders VALUES
+(64,14,DATE '2025-06-18',4,'Shipped');
+
+INSERT INTO Orders VALUES
+(65,15,DATE '2025-06-20',5,'Delivered');
+
+INSERT INTO Orders VALUES
+(66,16,DATE '2025-06-22',1,'Pending');
+
+INSERT INTO Orders VALUES
+(67,17,DATE '2025-06-25',2,'Delivered');
+
+INSERT INTO Orders VALUES
+(68,18,DATE '2025-06-28',3,'Shipped');
+
+INSERT INTO Orders VALUES
+(69,19,DATE '2025-07-01',4,'Delivered');
+
+INSERT INTO Orders VALUES
+(70,20,DATE '2025-07-03',5,'Pending');
+
+INSERT INTO Orders VALUES
+(71,21,DATE '2025-07-05',1,'Delivered');
+
+INSERT INTO Orders VALUES
+(72,22,DATE '2025-07-08',2,'Shipped');
+
+INSERT INTO Orders VALUES
+(73,23,DATE '2025-07-10',3,'Delivered');
+
+INSERT INTO Orders VALUES
+(74,24,DATE '2025-07-12',4,'Pending');
+
+INSERT INTO Orders VALUES
+(75,25,DATE '2025-07-15',5,'Delivered');
+
+INSERT INTO Orders VALUES
+(76,26,DATE '2025-07-18',1,'Shipped');
+
+INSERT INTO Orders VALUES
+(77,27,DATE '2025-07-20',2,'Delivered');
+
+INSERT INTO Orders VALUES
+(78,28,DATE '2025-07-22',3,'Pending');
+
+INSERT INTO Orders VALUES
+(79,29,DATE '2025-07-25',4,'Delivered');
+
+INSERT INTO Orders VALUES
+(80,30,DATE '2025-07-28',5,'Shipped');
+
+INSERT INTO Orders VALUES
+(81,31,DATE '2025-08-01',1,'Delivered');
+
+INSERT INTO Orders VALUES
+(82,32,DATE '2025-08-03',2,'Pending');
+
+INSERT INTO Orders VALUES
+(83,33,DATE '2025-08-05',3,'Delivered');
+
+INSERT INTO Orders VALUES
+(84,34,DATE '2025-08-08',4,'Shipped');
+
+INSERT INTO Orders VALUES
+(85,35,DATE '2025-08-10',5,'Delivered');
+
+INSERT INTO Orders VALUES
+(86,36,DATE '2025-08-12',1,'Pending');
+
+INSERT INTO Orders VALUES
+(87,37,DATE '2025-08-15',2,'Delivered');
+
+INSERT INTO Orders VALUES
+(88,38,DATE '2025-08-18',3,'Shipped');
+
+INSERT INTO Orders VALUES
+(89,39,DATE '2025-08-20',4,'Delivered');
+
+INSERT INTO Orders VALUES
+(90,40,DATE '2025-08-22',5,'Pending');
+
+INSERT INTO Orders VALUES
+(91,41,DATE '2025-08-25',1,'Delivered');
+
+INSERT INTO Orders VALUES
+(92,42,DATE '2025-08-28',2,'Shipped');
+
+INSERT INTO Orders VALUES
+(93,43,DATE '2025-09-01',3,'Delivered');
+
+INSERT INTO Orders VALUES
+(94,44,DATE '2025-09-03',4,'Pending');
+
+INSERT INTO Orders VALUES
+(95,45,DATE '2025-09-05',5,'Delivered');
+
+INSERT INTO Orders VALUES
+(96,46,DATE '2025-09-08',1,'Shipped');
+
+INSERT INTO Orders VALUES
+(97,47,DATE '2025-09-10',2,'Delivered');
+
+INSERT INTO Orders VALUES
+(98,48,DATE '2025-09-12',3,'Pending');
+
+INSERT INTO Orders VALUES
+(99,49,DATE '2025-09-15',4,'Delivered');
+
+INSERT INTO Orders VALUES
+(100,50,DATE '2025-09-18',5,'Shipped');
+
+INSERT INTO Orders VALUES
+(101,1,DATE '2025-09-20',1,'Delivered');
+
+INSERT INTO Orders VALUES
+(102,2,DATE '2025-09-22',2,'Pending');
+
+INSERT INTO Orders VALUES
+(103,3,DATE '2025-09-25',3,'Delivered');
+
+INSERT INTO Orders VALUES
+(104,4,DATE '2025-09-28',4,'Shipped');
+
+INSERT INTO Orders VALUES
+(105,5,DATE '2025-10-01',5,'Delivered');
+
+INSERT INTO Orders VALUES
+(106,6,DATE '2025-10-03',1,'Pending');
+
+INSERT INTO Orders VALUES
+(107,7,DATE '2025-10-05',2,'Delivered');
+
+INSERT INTO Orders VALUES
+(108,8,DATE '2025-10-08',3,'Shipped');
+
+INSERT INTO Orders VALUES
+(109,9,DATE '2025-10-10',4,'Delivered');
+
+INSERT INTO Orders VALUES
+(110,10,DATE '2025-10-12',5,'Pending');
+
+INSERT INTO Orders VALUES
+(111,11,DATE '2025-10-15',1,'Delivered');
+
+INSERT INTO Orders VALUES
+(112,12,DATE '2025-10-18',2,'Shipped');
+
+INSERT INTO Orders VALUES
+(113,13,DATE '2025-10-20',3,'Delivered');
+
+INSERT INTO Orders VALUES
+(114,14,DATE '2025-10-22',4,'Pending');
+
+INSERT INTO Orders VALUES
+(115,15,DATE '2025-10-25',5,'Delivered');
+
+INSERT INTO Orders VALUES
+(116,16,DATE '2025-10-28',1,'Shipped');
+
+INSERT INTO Orders VALUES
+(117,17,DATE '2025-11-01',2,'Delivered');
+
+INSERT INTO Orders VALUES
+(118,18,DATE '2025-11-03',3,'Pending');
+
+INSERT INTO Orders VALUES
+(119,19,DATE '2025-11-05',4,'Delivered');
+
+INSERT INTO Orders VALUES
+(120,20,DATE '2025-11-08',5,'Shipped');
+
+INSERT INTO Orders VALUES
+(121,21,DATE '2025-11-10',1,'Delivered');
+
+INSERT INTO Orders VALUES
+(122,22,DATE '2025-11-12',2,'Pending');
+
+INSERT INTO Orders VALUES
+(123,23,DATE '2025-11-15',3,'Delivered');
+
+INSERT INTO Orders VALUES
+(124,24,DATE '2025-11-18',4,'Shipped');
+
+INSERT INTO Orders VALUES
+(125,25,DATE '2025-11-20',5,'Delivered');
+
+INSERT INTO Orders VALUES
+(126,26,DATE '2025-11-22',1,'Pending');
+
+INSERT INTO Orders VALUES
+(127,27,DATE '2025-11-25',2,'Delivered');
+
+INSERT INTO Orders VALUES
+(128,28,DATE '2025-11-28',3,'Shipped');
+
+INSERT INTO Orders VALUES
+(129,29,DATE '2025-12-01',4,'Delivered');
+
+INSERT INTO Orders VALUES
+(130,30,DATE '2025-12-03',5,'Pending');
+
+INSERT INTO Orders VALUES
+(131,31,DATE '2025-12-05',1,'Delivered');
+
+INSERT INTO Orders VALUES
+(132,32,DATE '2025-12-08',2,'Shipped');
+
+INSERT INTO Orders VALUES
+(133,33,DATE '2025-12-10',3,'Delivered');
+
+INSERT INTO Orders VALUES
+(134,34,DATE '2025-12-12',4,'Pending');
+
+INSERT INTO Orders VALUES
+(135,35,DATE '2025-12-15',5,'Delivered');
+
+INSERT INTO Orders VALUES
+(136,36,DATE '2025-12-18',1,'Shipped');
+
+INSERT INTO Orders VALUES
+(137,37,DATE '2025-12-20',2,'Delivered');
+
+INSERT INTO Orders VALUES
+(138,38,DATE '2025-12-22',3,'Pending');
+
+INSERT INTO Orders VALUES
+(139,39,DATE '2025-12-25',4,'Delivered');
+
+INSERT INTO Orders VALUES
+(140,40,DATE '2025-12-28',5,'Shipped');
+
+INSERT INTO Orders VALUES
+(141,41,DATE '2025-12-30',1,'Delivered');
+
+INSERT INTO Orders VALUES
+(142,42,DATE '2026-01-02',2,'Pending');
+
+INSERT INTO Orders VALUES
+(143,43,DATE '2026-01-05',3,'Delivered');
+
+INSERT INTO Orders VALUES
+(144,44,DATE '2026-01-08',4,'Shipped');
+
+INSERT INTO Orders VALUES
+(145,45,DATE '2026-01-10',5,'Delivered');
+
+INSERT INTO Orders VALUES
+(146,46,DATE '2026-01-12',1,'Pending');
+
+INSERT INTO Orders VALUES
+(147,47,DATE '2026-01-15',2,'Delivered');
+
+INSERT INTO Orders VALUES
+(148,48,DATE '2026-01-18',3,'Shipped');
+
+INSERT INTO Orders VALUES
+(149,49,DATE '2026-01-20',4,'Delivered');
+
+INSERT INTO Orders VALUES
+(150,50,DATE '2026-01-22',5,'Pending');
+
+INSERT INTO Orders VALUES
+(151,1,DATE '2026-01-25',1,'Delivered');
+
+INSERT INTO Orders VALUES
+(152,2,DATE '2026-01-28',2,'Shipped');
+
+INSERT INTO Orders VALUES
+(153,3,DATE '2026-02-01',3,'Delivered');
+
+INSERT INTO Orders VALUES
+(154,4,DATE '2026-02-05',4,'Pending');
+
+INSERT INTO Orders VALUES
+(155,5,DATE '2026-02-08',5,'Delivered');
+
+INSERT INTO Orders VALUES
+(156,6,DATE '2026-02-10',1,'Shipped');
+
+INSERT INTO Orders VALUES
+(157,7,DATE '2026-02-12',2,'Delivered');
+
+INSERT INTO Orders VALUES
+(158,8,DATE '2026-02-15',3,'Pending');
+
+INSERT INTO Orders VALUES
+(159,9,DATE '2026-02-18',4,'Delivered');
+
+INSERT INTO Orders VALUES
+(160,10,DATE '2026-02-20',5,'Shipped');
+
+INSERT INTO Orders VALUES
+(161,11,DATE '2026-02-22',1,'Delivered');
+
+INSERT INTO Orders VALUES
+(162,12,DATE '2026-02-25',2,'Pending');
+
+INSERT INTO Orders VALUES
+(163,13,DATE '2026-02-28',3,'Delivered');
+
+INSERT INTO Orders VALUES
+(164,14,DATE '2026-03-02',4,'Shipped');
+
+INSERT INTO Orders VALUES
+(165,15,DATE '2026-03-05',5,'Delivered');
+
+INSERT INTO Orders VALUES
+(166,16,DATE '2026-03-08',1,'Pending');
+
+INSERT INTO Orders VALUES
+(167,17,DATE '2026-03-10',2,'Delivered');
+
+INSERT INTO Orders VALUES
+(168,18,DATE '2026-03-12',3,'Shipped');
+
+INSERT INTO Orders VALUES
+(169,19,DATE '2026-03-15',4,'Delivered');
+
+INSERT INTO Orders VALUES
+(170,20,DATE '2026-03-18',5,'Pending');
+
+INSERT INTO Orders VALUES
+(171,21,DATE '2026-03-20',1,'Delivered');
+
+INSERT INTO Orders VALUES
+(172,22,DATE '2026-03-22',2,'Shipped');
+
+INSERT INTO Orders VALUES
+(173,23,DATE '2026-03-25',3,'Delivered');
+
+INSERT INTO Orders VALUES
+(174,24,DATE '2026-03-28',4,'Pending');
+
+INSERT INTO Orders VALUES
+(175,25,DATE '2026-04-01',5,'Delivered');
+
+INSERT INTO Orders VALUES
+(176,26,DATE '2026-04-03',1,'Shipped');
+
+INSERT INTO Orders VALUES
+(177,27,DATE '2026-04-05',2,'Delivered');
+
+INSERT INTO Orders VALUES
+(178,28,DATE '2026-04-08',3,'Pending');
+
+INSERT INTO Orders VALUES
+(179,29,DATE '2026-04-10',4,'Delivered');
+
+INSERT INTO Orders VALUES
+(180,30,DATE '2026-04-12',5,'Shipped');
+
+INSERT INTO Orders VALUES
+(181,31,DATE '2026-04-15',1,'Delivered');
+
+INSERT INTO Orders VALUES
+(182,32,DATE '2026-04-18',2,'Pending');
+
+INSERT INTO Orders VALUES
+(183,33,DATE '2026-04-20',3,'Delivered');
+
+INSERT INTO Orders VALUES
+(184,34,DATE '2026-04-22',4,'Shipped');
+
+INSERT INTO Orders VALUES
+(185,35,DATE '2026-04-25',5,'Delivered');
+
+INSERT INTO Orders VALUES
+(186,36,DATE '2026-04-28',1,'Pending');
+
+INSERT INTO Orders VALUES
+(187,37,DATE '2026-05-01',2,'Delivered');
+
+INSERT INTO Orders VALUES
+(188,38,DATE '2026-05-03',3,'Shipped');
+
+INSERT INTO Orders VALUES
+(189,39,DATE '2026-05-05',4,'Delivered');
+
+INSERT INTO Orders VALUES
+(190,40,DATE '2026-05-08',5,'Pending');
+
+INSERT INTO Orders VALUES
+(191,41,DATE '2026-05-10',1,'Delivered');
+
+INSERT INTO Orders VALUES
+(192,42,DATE '2026-05-12',2,'Shipped');
+
+INSERT INTO Orders VALUES
+(193,43,DATE '2026-05-15',3,'Delivered');
+
+INSERT INTO Orders VALUES
+(194,44,DATE '2026-05-18',4,'Pending');
+
+INSERT INTO Orders VALUES
+(195,45,DATE '2026-05-20',5,'Delivered');
+
+INSERT INTO Orders VALUES
+(196,46,DATE '2026-05-22',1,'Shipped');
+
+INSERT INTO Orders VALUES
+(197,47,DATE '2026-05-25',2,'Delivered');
+
+INSERT INTO Orders VALUES
+(198,48,DATE '2026-05-28',3,'Pending');
+
+INSERT INTO Orders VALUES
+(199,49,DATE '2026-05-30',4,'Delivered');
+
+INSERT INTO Orders VALUES
+(200,50,DATE '2026-06-01',5,'Shipped');
+
+COMMIT;
+
+------------------------------------------------------
+-- PART 2.6 : ORDER_ITEMS DATA (1-400)
+------------------------------------------------------
+
+INSERT INTO Order_Items VALUES
+(1,1,1,1,70000);
+
+INSERT INTO Order_Items VALUES
+(2,2,2,1,65000);
+
+INSERT INTO Order_Items VALUES
+(3,3,3,1,55000);
+
+INSERT INTO Order_Items VALUES
+(4,4,6,2,800);
+
+INSERT INTO Order_Items VALUES
+(5,5,9,1,3000);
+
+INSERT INTO Order_Items VALUES
+(6,6,12,1,4000);
+
+INSERT INTO Order_Items VALUES
+(7,7,15,2,600);
+
+INSERT INTO Order_Items VALUES
+(8,8,20,1,1200);
+
+INSERT INTO Order_Items VALUES
+(9,9,25,1,8000);
+
+INSERT INTO Order_Items VALUES
+(10,10,30,2,1000);
+
+
+INSERT INTO Order_Items VALUES
+(11,11,5,1,5000);
+
+INSERT INTO Order_Items VALUES
+(12,12,7,1,1500);
+
+INSERT INTO Order_Items VALUES
+(13,13,10,2,2500);
+
+INSERT INTO Order_Items VALUES
+(14,14,13,1,12000);
+
+INSERT INTO Order_Items VALUES
+(15,15,16,1,900);
+
+INSERT INTO Order_Items VALUES
+(16,16,18,2,700);
+
+INSERT INTO Order_Items VALUES
+(17,17,22,3,700);
+
+INSERT INTO Order_Items VALUES
+(18,18,24,2,400);
+
+INSERT INTO Order_Items VALUES
+(19,19,26,1,30000);
+
+INSERT INTO Order_Items VALUES
+(20,20,28,1,6000);
+
+
+INSERT INTO Order_Items VALUES
+(21,21,1,1,70000);
+
+INSERT INTO Order_Items VALUES
+(22,22,4,1,50000);
+
+INSERT INTO Order_Items VALUES
+(23,23,8,2,1200);
+
+INSERT INTO Order_Items VALUES
+(24,24,11,1,1000);
+
+INSERT INTO Order_Items VALUES
+(25,25,14,1,7000);
+
+INSERT INTO Order_Items VALUES
+(26,26,17,1,2500);
+
+INSERT INTO Order_Items VALUES
+(27,27,19,2,800);
+
+INSERT INTO Order_Items VALUES
+(28,28,21,1,2000);
+
+INSERT INTO Order_Items VALUES
+(29,29,23,2,800);
+
+INSERT INTO Order_Items VALUES
+(30,30,27,1,1500);
+
+
+INSERT INTO Order_Items VALUES
+(31,31,29,1,500);
+
+INSERT INTO Order_Items VALUES
+(32,32,30,2,1000);
+
+INSERT INTO Order_Items VALUES
+(33,33,2,1,65000);
+
+INSERT INTO Order_Items VALUES
+(34,34,3,1,55000);
+
+INSERT INTO Order_Items VALUES
+(35,35,5,2,5000);
+
+INSERT INTO Order_Items VALUES
+(36,36,6,3,800);
+
+INSERT INTO Order_Items VALUES
+(37,37,9,1,3000);
+
+INSERT INTO Order_Items VALUES
+(38,38,12,2,4000);
+
+INSERT INTO Order_Items VALUES
+(39,39,15,1,600);
+
+INSERT INTO Order_Items VALUES
+(40,40,20,2,1200);
+
+
+INSERT INTO Order_Items VALUES
+(41,41,25,1,8000);
+
+INSERT INTO Order_Items VALUES
+(42,42,30,1,1000);
+
+INSERT INTO Order_Items VALUES
+(43,43,7,2,1500);
+
+INSERT INTO Order_Items VALUES
+(44,44,10,1,2500);
+
+INSERT INTO Order_Items VALUES
+(45,45,13,2,12000);
+
+INSERT INTO Order_Items VALUES
+(46,46,16,1,900);
+
+INSERT INTO Order_Items VALUES
+(47,47,18,3,700);
+
+INSERT INTO Order_Items VALUES
+(48,48,22,1,700);
+
+INSERT INTO Order_Items VALUES
+(49,49,24,2,400);
+
+INSERT INTO Order_Items VALUES
+(50,50,26,1,30000);
+
+
+
+INSERT INTO Order_Items VALUES
+(51,51,1,1,70000);
+
+INSERT INTO Order_Items VALUES
+(52,52,2,1,65000);
+
+INSERT INTO Order_Items VALUES
+(53,53,3,1,55000);
+
+INSERT INTO Order_Items VALUES
+(54,54,4,1,50000);
+
+INSERT INTO Order_Items VALUES
+(55,55,5,2,5000);
+
+INSERT INTO Order_Items VALUES
+(56,56,6,2,800);
+
+INSERT INTO Order_Items VALUES
+(57,57,7,1,1500);
+
+INSERT INTO Order_Items VALUES
+(58,58,8,2,1200);
+
+INSERT INTO Order_Items VALUES
+(59,59,9,1,3000);
+
+INSERT INTO Order_Items VALUES
+(60,60,10,1,2500);
+
+
+INSERT INTO Order_Items VALUES
+(61,61,11,2,1000);
+
+INSERT INTO Order_Items VALUES
+(62,62,12,1,4000);
+
+INSERT INTO Order_Items VALUES
+(63,63,13,1,12000);
+
+INSERT INTO Order_Items VALUES
+(64,64,14,2,7000);
+
+INSERT INTO Order_Items VALUES
+(65,65,15,1,600);
+
+INSERT INTO Order_Items VALUES
+(66,66,16,2,900);
+
+INSERT INTO Order_Items VALUES
+(67,67,17,1,2500);
+
+INSERT INTO Order_Items VALUES
+(68,68,18,2,700);
+
+INSERT INTO Order_Items VALUES
+(69,69,19,3,800);
+
+INSERT INTO Order_Items VALUES
+(70,70,20,1,1200);
+
+
+INSERT INTO Order_Items VALUES
+(71,71,21,1,2000);
+
+INSERT INTO Order_Items VALUES
+(72,72,22,2,700);
+
+INSERT INTO Order_Items VALUES
+(73,73,23,1,800);
+
+INSERT INTO Order_Items VALUES
+(74,74,24,2,400);
+
+INSERT INTO Order_Items VALUES
+(75,75,25,1,8000);
+
+INSERT INTO Order_Items VALUES
+(76,76,26,1,30000);
+
+INSERT INTO Order_Items VALUES
+(77,77,27,2,1500);
+
+INSERT INTO Order_Items VALUES
+(78,78,28,1,6000);
+
+INSERT INTO Order_Items VALUES
+(79,79,29,2,500);
+
+INSERT INTO Order_Items VALUES
+(80,80,30,1,1000);
+
+
+INSERT INTO Order_Items VALUES
+(81,81,1,1,70000);
+
+INSERT INTO Order_Items VALUES
+(82,82,5,1,5000);
+
+INSERT INTO Order_Items VALUES
+(83,83,9,2,3000);
+
+INSERT INTO Order_Items VALUES
+(84,84,13,1,12000);
+
+INSERT INTO Order_Items VALUES
+(85,85,17,1,2500);
+
+INSERT INTO Order_Items VALUES
+(86,86,21,2,2000);
+
+INSERT INTO Order_Items VALUES
+(87,87,25,1,8000);
+
+INSERT INTO Order_Items VALUES
+(88,88,30,2,1000);
+
+INSERT INTO Order_Items VALUES
+(89,89,6,3,800);
+
+INSERT INTO Order_Items VALUES
+(90,90,10,1,2500);
+
+
+INSERT INTO Order_Items VALUES
+(91,91,14,1,7000);
+
+INSERT INTO Order_Items VALUES
+(92,92,18,2,700);
+
+INSERT INTO Order_Items VALUES
+(93,93,22,1,700);
+
+INSERT INTO Order_Items VALUES
+(94,94,26,1,30000);
+
+INSERT INTO Order_Items VALUES
+(95,95,28,1,6000);
+
+INSERT INTO Order_Items VALUES
+(96,96,2,1,65000);
+
+INSERT INTO Order_Items VALUES
+(97,97,3,1,55000);
+
+INSERT INTO Order_Items VALUES
+(98,98,7,2,1500);
+
+INSERT INTO Order_Items VALUES
+(99,99,11,1,1000);
+
+INSERT INTO Order_Items VALUES
+(100,100,24,2,400);
+
+INSERT INTO Order_Items VALUES
+(101,101,1,1,70000);
+
+INSERT INTO Order_Items VALUES
+(102,102,2,1,65000);
+
+INSERT INTO Order_Items VALUES
+(103,103,3,1,55000);
+
+INSERT INTO Order_Items VALUES
+(104,104,4,2,50000);
+
+INSERT INTO Order_Items VALUES
+(105,105,5,1,5000);
+
+INSERT INTO Order_Items VALUES
+(106,106,6,2,800);
+
+INSERT INTO Order_Items VALUES
+(107,107,7,1,1500);
+
+INSERT INTO Order_Items VALUES
+(108,108,8,1,1200);
+
+INSERT INTO Order_Items VALUES
+(109,109,9,2,3000);
+
+INSERT INTO Order_Items VALUES
+(110,110,10,1,2500);
+
+
+INSERT INTO Order_Items VALUES
+(111,111,11,1,1000);
+
+INSERT INTO Order_Items VALUES
+(112,112,12,2,4000);
+
+INSERT INTO Order_Items VALUES
+(113,113,13,1,12000);
+
+INSERT INTO Order_Items VALUES
+(114,114,14,1,7000);
+
+INSERT INTO Order_Items VALUES
+(115,115,15,2,600);
+
+INSERT INTO Order_Items VALUES
+(116,116,16,1,900);
+
+INSERT INTO Order_Items VALUES
+(117,117,17,2,2500);
+
+INSERT INTO Order_Items VALUES
+(118,118,18,1,700);
+
+INSERT INTO Order_Items VALUES
+(119,119,19,2,800);
+
+INSERT INTO Order_Items VALUES
+(120,120,20,1,1200);
+
+
+INSERT INTO Order_Items VALUES
+(121,121,21,2,2000);
+
+INSERT INTO Order_Items VALUES
+(122,122,22,1,700);
+
+INSERT INTO Order_Items VALUES
+(123,123,23,2,800);
+
+INSERT INTO Order_Items VALUES
+(124,124,24,1,400);
+
+INSERT INTO Order_Items VALUES
+(125,125,25,2,8000);
+
+INSERT INTO Order_Items VALUES
+(126,126,26,1,30000);
+
+INSERT INTO Order_Items VALUES
+(127,127,27,1,1500);
+
+INSERT INTO Order_Items VALUES
+(128,128,28,2,6000);
+
+INSERT INTO Order_Items VALUES
+(129,129,29,1,500);
+
+INSERT INTO Order_Items VALUES
+(130,130,30,2,1000);
+
+
+INSERT INTO Order_Items VALUES
+(131,131,1,1,70000);
+
+INSERT INTO Order_Items VALUES
+(132,132,5,2,5000);
+
+INSERT INTO Order_Items VALUES
+(133,133,9,1,3000);
+
+INSERT INTO Order_Items VALUES
+(134,134,13,2,12000);
+
+INSERT INTO Order_Items VALUES
+(135,135,17,1,2500);
+
+INSERT INTO Order_Items VALUES
+(136,136,21,1,2000);
+
+INSERT INTO Order_Items VALUES
+(137,137,25,2,8000);
+
+INSERT INTO Order_Items VALUES
+(138,138,30,1,1000);
+
+INSERT INTO Order_Items VALUES
+(139,139,6,2,800);
+
+INSERT INTO Order_Items VALUES
+(140,140,10,1,2500);
+
+
+INSERT INTO Order_Items VALUES
+(141,141,14,1,7000);
+
+INSERT INTO Order_Items VALUES
+(142,142,18,2,700);
+
+INSERT INTO Order_Items VALUES
+(143,143,22,1,700);
+
+INSERT INTO Order_Items VALUES
+(144,144,26,1,30000);
+
+INSERT INTO Order_Items VALUES
+(145,145,28,1,6000);
+
+INSERT INTO Order_Items VALUES
+(146,146,2,1,65000);
+
+INSERT INTO Order_Items VALUES
+(147,147,3,1,55000);
+
+INSERT INTO Order_Items VALUES
+(148,148,7,2,1500);
+
+INSERT INTO Order_Items VALUES
+(149,149,11,1,1000);
+
+INSERT INTO Order_Items VALUES
+(150,150,24,2,400);
+
+INSERT INTO Order_Items VALUES
+(151,151,1,1,70000);
+
+INSERT INTO Order_Items VALUES
+(152,152,2,2,65000);
+
+INSERT INTO Order_Items VALUES
+(153,153,3,1,55000);
+
+INSERT INTO Order_Items VALUES
+(154,154,4,1,50000);
+
+INSERT INTO Order_Items VALUES
+(155,155,5,3,5000);
+
+INSERT INTO Order_Items VALUES
+(156,156,6,2,800);
+
+INSERT INTO Order_Items VALUES
+(157,157,7,1,1500);
+
+INSERT INTO Order_Items VALUES
+(158,158,8,2,1200);
+
+INSERT INTO Order_Items VALUES
+(159,159,9,1,3000);
+
+INSERT INTO Order_Items VALUES
+(160,160,10,2,2500);
+
+
+INSERT INTO Order_Items VALUES
+(161,161,11,1,1000);
+
+INSERT INTO Order_Items VALUES
+(162,162,12,2,4000);
+
+INSERT INTO Order_Items VALUES
+(163,163,13,1,12000);
+
+INSERT INTO Order_Items VALUES
+(164,164,14,2,7000);
+
+INSERT INTO Order_Items VALUES
+(165,165,15,1,600);
+
+INSERT INTO Order_Items VALUES
+(166,166,16,2,900);
+
+INSERT INTO Order_Items VALUES
+(167,167,17,1,2500);
+
+INSERT INTO Order_Items VALUES
+(168,168,18,3,700);
+
+INSERT INTO Order_Items VALUES
+(169,169,19,2,800);
+
+INSERT INTO Order_Items VALUES
+(170,170,20,1,1200);
+
+
+INSERT INTO Order_Items VALUES
+(171,171,21,1,2000);
+
+INSERT INTO Order_Items VALUES
+(172,172,22,2,700);
+
+INSERT INTO Order_Items VALUES
+(173,173,23,1,800);
+
+INSERT INTO Order_Items VALUES
+(174,174,24,2,400);
+
+INSERT INTO Order_Items VALUES
+(175,175,25,1,8000);
+
+INSERT INTO Order_Items VALUES
+(176,176,26,2,30000);
+
+INSERT INTO Order_Items VALUES
+(177,177,27,1,1500);
+
+INSERT INTO Order_Items VALUES
+(178,178,28,2,6000);
+
+INSERT INTO Order_Items VALUES
+(179,179,29,1,500);
+
+INSERT INTO Order_Items VALUES
+(180,180,30,2,1000);
+
+
+INSERT INTO Order_Items VALUES
+(181,181,1,1,70000);
+
+INSERT INTO Order_Items VALUES
+(182,182,5,2,5000);
+
+INSERT INTO Order_Items VALUES
+(183,183,9,1,3000);
+
+INSERT INTO Order_Items VALUES
+(184,184,13,2,12000);
+
+INSERT INTO Order_Items VALUES
+(185,185,17,1,2500);
+
+INSERT INTO Order_Items VALUES
+(186,186,21,2,2000);
+
+INSERT INTO Order_Items VALUES
+(187,187,25,1,8000);
+
+INSERT INTO Order_Items VALUES
+(188,188,30,1,1000);
+
+INSERT INTO Order_Items VALUES
+(189,189,6,3,800);
+
+INSERT INTO Order_Items VALUES
+(190,190,10,1,2500);
+
+
+INSERT INTO Order_Items VALUES
+(191,191,14,1,7000);
+
+INSERT INTO Order_Items VALUES
+(192,192,18,2,700);
+
+INSERT INTO Order_Items VALUES
+(193,193,22,1,700);
+
+INSERT INTO Order_Items VALUES
+(194,194,26,1,30000);
+
+INSERT INTO Order_Items VALUES
+(195,195,28,1,6000);
+
+INSERT INTO Order_Items VALUES
+(196,196,2,1,65000);
+
+INSERT INTO Order_Items VALUES
+(197,197,3,1,55000);
+
+INSERT INTO Order_Items VALUES
+(198,198,7,2,1500);
+
+INSERT INTO Order_Items VALUES
+(199,199,11,1,1000);
+
+INSERT INTO Order_Items VALUES
+(200,200,24,2,400);
+
+INSERT INTO Order_Items VALUES
+(201,1,1,2,70000);
+
+INSERT INTO Order_Items VALUES
+(202,2,5,1,5000);
+
+INSERT INTO Order_Items VALUES
+(203,3,9,2,3000);
+
+INSERT INTO Order_Items VALUES
+(204,4,13,1,12000);
+
+INSERT INTO Order_Items VALUES
+(205,5,17,2,2500);
+
+INSERT INTO Order_Items VALUES
+(206,6,21,1,2000);
+
+INSERT INTO Order_Items VALUES
+(207,7,25,1,8000);
+
+INSERT INTO Order_Items VALUES
+(208,8,30,2,1000);
+
+INSERT INTO Order_Items VALUES
+(209,9,6,3,800);
+
+INSERT INTO Order_Items VALUES
+(210,10,10,1,2500);
+
+
+INSERT INTO Order_Items VALUES
+(211,11,14,2,7000);
+
+INSERT INTO Order_Items VALUES
+(212,12,18,1,700);
+
+INSERT INTO Order_Items VALUES
+(213,13,22,2,700);
+
+INSERT INTO Order_Items VALUES
+(214,14,26,1,30000);
+
+INSERT INTO Order_Items VALUES
+(215,15,28,2,6000);
+
+INSERT INTO Order_Items VALUES
+(216,16,2,1,65000);
+
+INSERT INTO Order_Items VALUES
+(217,17,3,1,55000);
+
+INSERT INTO Order_Items VALUES
+(218,18,7,2,1500);
+
+INSERT INTO Order_Items VALUES
+(219,19,11,1,1000);
+
+INSERT INTO Order_Items VALUES
+(220,20,24,2,400);
+
+
+INSERT INTO Order_Items VALUES
+(221,21,1,1,70000);
+
+INSERT INTO Order_Items VALUES
+(222,22,4,1,50000);
+
+INSERT INTO Order_Items VALUES
+(223,23,8,2,1200);
+
+INSERT INTO Order_Items VALUES
+(224,24,12,1,4000);
+
+INSERT INTO Order_Items VALUES
+(225,25,15,3,600);
+
+INSERT INTO Order_Items VALUES
+(226,26,19,2,800);
+
+INSERT INTO Order_Items VALUES
+(227,27,23,1,800);
+
+INSERT INTO Order_Items VALUES
+(228,28,27,2,1500);
+
+INSERT INTO Order_Items VALUES
+(229,29,29,1,500);
+
+INSERT INTO Order_Items VALUES
+(230,30,20,1,1200);
+
+
+INSERT INTO Order_Items VALUES
+(231,31,1,1,70000);
+
+INSERT INTO Order_Items VALUES
+(232,32,5,2,5000);
+
+INSERT INTO Order_Items VALUES
+(233,33,9,1,3000);
+
+INSERT INTO Order_Items VALUES
+(234,34,13,1,12000);
+
+INSERT INTO Order_Items VALUES
+(235,35,17,2,2500);
+
+INSERT INTO Order_Items VALUES
+(236,36,21,1,2000);
+
+INSERT INTO Order_Items VALUES
+(237,37,25,2,8000);
+
+INSERT INTO Order_Items VALUES
+(238,38,30,1,1000);
+
+INSERT INTO Order_Items VALUES
+(239,39,6,2,800);
+
+INSERT INTO Order_Items VALUES
+(240,40,10,2,2500);
+
+
+INSERT INTO Order_Items VALUES
+(241,41,14,1,7000);
+
+INSERT INTO Order_Items VALUES
+(242,42,18,2,700);
+
+INSERT INTO Order_Items VALUES
+(243,43,22,1,700);
+
+INSERT INTO Order_Items VALUES
+(244,44,26,2,30000);
+
+INSERT INTO Order_Items VALUES
+(245,45,28,1,6000);
+
+INSERT INTO Order_Items VALUES
+(246,46,2,1,65000);
+
+INSERT INTO Order_Items VALUES
+(247,47,3,1,55000);
+
+INSERT INTO Order_Items VALUES
+(248,48,7,2,1500);
+
+INSERT INTO Order_Items VALUES
+(249,49,11,1,1000);
+
+INSERT INTO Order_Items VALUES
+(250,50,24,2,400);
+
+INSERT INTO Order_Items VALUES
+(251,51,1,1,70000);
+
+INSERT INTO Order_Items VALUES
+(252,52,2,1,65000);
+
+INSERT INTO Order_Items VALUES
+(253,53,3,2,55000);
+
+INSERT INTO Order_Items VALUES
+(254,54,4,1,50000);
+
+INSERT INTO Order_Items VALUES
+(255,55,5,2,5000);
+
+INSERT INTO Order_Items VALUES
+(256,56,6,1,800);
+
+INSERT INTO Order_Items VALUES
+(257,57,7,2,1500);
+
+INSERT INTO Order_Items VALUES
+(258,58,8,1,1200);
+
+INSERT INTO Order_Items VALUES
+(259,59,9,2,3000);
+
+INSERT INTO Order_Items VALUES
+(260,60,10,1,2500);
+
+
+INSERT INTO Order_Items VALUES
+(261,61,11,2,1000);
+
+INSERT INTO Order_Items VALUES
+(262,62,12,1,4000);
+
+INSERT INTO Order_Items VALUES
+(263,63,13,2,12000);
+
+INSERT INTO Order_Items VALUES
+(264,64,14,1,7000);
+
+INSERT INTO Order_Items VALUES
+(265,65,15,2,600);
+
+INSERT INTO Order_Items VALUES
+(266,66,16,1,900);
+
+INSERT INTO Order_Items VALUES
+(267,67,17,2,2500);
+
+INSERT INTO Order_Items VALUES
+(268,68,18,1,700);
+
+INSERT INTO Order_Items VALUES
+(269,69,19,2,800);
+
+INSERT INTO Order_Items VALUES
+(270,70,20,1,1200);
+
+
+INSERT INTO Order_Items VALUES
+(271,71,21,2,2000);
+
+INSERT INTO Order_Items VALUES
+(272,72,22,1,700);
+
+INSERT INTO Order_Items VALUES
+(273,73,23,2,800);
+
+INSERT INTO Order_Items VALUES
+(274,74,24,1,400);
+
+INSERT INTO Order_Items VALUES
+(275,75,25,2,8000);
+
+INSERT INTO Order_Items VALUES
+(276,76,26,1,30000);
+
+INSERT INTO Order_Items VALUES
+(277,77,27,2,1500);
+
+INSERT INTO Order_Items VALUES
+(278,78,28,1,6000);
+
+INSERT INTO Order_Items VALUES
+(279,79,29,2,500);
+
+INSERT INTO Order_Items VALUES
+(280,80,30,1,1000);
+
+
+INSERT INTO Order_Items VALUES
+(281,81,1,2,70000);
+
+INSERT INTO Order_Items VALUES
+(282,82,5,1,5000);
+
+INSERT INTO Order_Items VALUES
+(283,83,9,2,3000);
+
+INSERT INTO Order_Items VALUES
+(284,84,13,1,12000);
+
+INSERT INTO Order_Items VALUES
+(285,85,17,2,2500);
+
+INSERT INTO Order_Items VALUES
+(286,86,21,1,2000);
+
+INSERT INTO Order_Items VALUES
+(287,87,25,1,8000);
+
+INSERT INTO Order_Items VALUES
+(288,88,30,2,1000);
+
+INSERT INTO Order_Items VALUES
+(289,89,6,1,800);
+
+INSERT INTO Order_Items VALUES
+(290,90,10,2,2500);
+
+
+INSERT INTO Order_Items VALUES
+(291,91,14,1,7000);
+
+INSERT INTO Order_Items VALUES
+(292,92,18,2,700);
+
+INSERT INTO Order_Items VALUES
+(293,93,22,1,700);
+
+INSERT INTO Order_Items VALUES
+(294,94,26,2,30000);
+
+INSERT INTO Order_Items VALUES
+(295,95,28,1,6000);
+
+INSERT INTO Order_Items VALUES
+(296,96,2,1,65000);
+
+INSERT INTO Order_Items VALUES
+(297,97,3,2,55000);
+
+INSERT INTO Order_Items VALUES
+(298,98,7,1,1500);
+
+INSERT INTO Order_Items VALUES
+(299,99,11,2,1000);
+
+INSERT INTO Order_Items VALUES
+(300,100,24,1,400);
+
+INSERT INTO Order_Items VALUES
+(301,101,1,1,70000);
+
+INSERT INTO Order_Items VALUES
+(302,102,5,2,5000);
+
+INSERT INTO Order_Items VALUES
+(303,103,9,1,3000);
+
+INSERT INTO Order_Items VALUES
+(304,104,13,2,12000);
+
+INSERT INTO Order_Items VALUES
+(305,105,17,1,2500);
+
+INSERT INTO Order_Items VALUES
+(306,106,21,2,2000);
+
+INSERT INTO Order_Items VALUES
+(307,107,25,1,8000);
+
+INSERT INTO Order_Items VALUES
+(308,108,30,2,1000);
+
+INSERT INTO Order_Items VALUES
+(309,109,6,1,800);
+
+INSERT INTO Order_Items VALUES
+(310,110,10,2,2500);
+
+
+INSERT INTO Order_Items VALUES
+(311,111,14,1,7000);
+
+INSERT INTO Order_Items VALUES
+(312,112,18,2,700);
+
+INSERT INTO Order_Items VALUES
+(313,113,22,1,700);
+
+INSERT INTO Order_Items VALUES
+(314,114,26,2,30000);
+
+INSERT INTO Order_Items VALUES
+(315,115,28,1,6000);
+
+INSERT INTO Order_Items VALUES
+(316,116,2,1,65000);
+
+INSERT INTO Order_Items VALUES
+(317,117,3,2,55000);
+
+INSERT INTO Order_Items VALUES
+(318,118,7,1,1500);
+
+INSERT INTO Order_Items VALUES
+(319,119,11,2,1000);
+
+INSERT INTO Order_Items VALUES
+(320,120,24,1,400);
+
+
+INSERT INTO Order_Items VALUES
+(321,121,1,2,70000);
+
+INSERT INTO Order_Items VALUES
+(322,122,4,1,50000);
+
+INSERT INTO Order_Items VALUES
+(323,123,8,2,1200);
+
+INSERT INTO Order_Items VALUES
+(324,124,12,1,4000);
+
+INSERT INTO Order_Items VALUES
+(325,125,15,2,600);
+
+INSERT INTO Order_Items VALUES
+(326,126,19,1,800);
+
+INSERT INTO Order_Items VALUES
+(327,127,23,2,800);
+
+INSERT INTO Order_Items VALUES
+(328,128,27,1,1500);
+
+INSERT INTO Order_Items VALUES
+(329,129,29,2,500);
+
+INSERT INTO Order_Items VALUES
+(330,130,20,1,1200);
+
+
+INSERT INTO Order_Items VALUES
+(331,131,1,1,70000);
+
+INSERT INTO Order_Items VALUES
+(332,132,5,2,5000);
+
+INSERT INTO Order_Items VALUES
+(333,133,9,1,3000);
+
+INSERT INTO Order_Items VALUES
+(334,134,13,2,12000);
+
+INSERT INTO Order_Items VALUES
+(335,135,17,1,2500);
+
+INSERT INTO Order_Items VALUES
+(336,136,21,2,2000);
+
+INSERT INTO Order_Items VALUES
+(337,137,25,1,8000);
+
+INSERT INTO Order_Items VALUES
+(338,138,30,2,1000);
+
+INSERT INTO Order_Items VALUES
+(339,139,6,1,800);
+
+INSERT INTO Order_Items VALUES
+(340,140,10,2,2500);
+
+
+INSERT INTO Order_Items VALUES
+(341,141,14,1,7000);
+
+INSERT INTO Order_Items VALUES
+(342,142,18,2,700);
+
+INSERT INTO Order_Items VALUES
+(343,143,22,1,700);
+
+INSERT INTO Order_Items VALUES
+(344,144,26,2,30000);
+
+INSERT INTO Order_Items VALUES
+(345,145,28,1,6000);
+
+INSERT INTO Order_Items VALUES
+(346,146,2,1,65000);
+
+INSERT INTO Order_Items VALUES
+(347,147,3,2,55000);
+
+INSERT INTO Order_Items VALUES
+(348,148,7,1,1500);
+
+INSERT INTO Order_Items VALUES
+(349,149,11,2,1000);
+
+INSERT INTO Order_Items VALUES
+(350,150,24,1,400);
+
+
+INSERT INTO Order_Items VALUES
+(351,151,1,1,70000);
+
+INSERT INTO Order_Items VALUES
+(352,152,5,2,5000);
+
+INSERT INTO Order_Items VALUES
+(353,153,9,1,3000);
+
+INSERT INTO Order_Items VALUES
+(354,154,13,2,12000);
+
+INSERT INTO Order_Items VALUES
+(355,155,17,1,2500);
+
+INSERT INTO Order_Items VALUES
+(356,156,21,2,2000);
+
+INSERT INTO Order_Items VALUES
+(357,157,25,1,8000);
+
+INSERT INTO Order_Items VALUES
+(358,158,30,2,1000);
+
+INSERT INTO Order_Items VALUES
+(359,159,6,1,800);
+
+INSERT INTO Order_Items VALUES
+(360,160,10,2,2500);
+
+
+INSERT INTO Order_Items VALUES
+(361,161,14,1,7000);
+
+INSERT INTO Order_Items VALUES
+(362,162,18,2,700);
+
+INSERT INTO Order_Items VALUES
+(363,163,22,1,700);
+
+INSERT INTO Order_Items VALUES
+(364,164,26,2,30000);
+
+INSERT INTO Order_Items VALUES
+(365,165,28,1,6000);
+
+INSERT INTO Order_Items VALUES
+(366,166,2,1,65000);
+
+INSERT INTO Order_Items VALUES
+(367,167,3,2,55000);
+
+INSERT INTO Order_Items VALUES
+(368,168,7,1,1500);
+
+INSERT INTO Order_Items VALUES
+(369,169,11,2,1000);
+
+INSERT INTO Order_Items VALUES
+(370,170,24,1,400);
+
+
+INSERT INTO Order_Items VALUES
+(371,171,1,2,70000);
+
+INSERT INTO Order_Items VALUES
+(372,172,4,1,50000);
+
+INSERT INTO Order_Items VALUES
+(373,173,8,2,1200);
+
+INSERT INTO Order_Items VALUES
+(374,174,12,1,4000);
+
+INSERT INTO Order_Items VALUES
+(375,175,15,2,600);
+
+INSERT INTO Order_Items VALUES
+(376,176,19,1,800);
+
+INSERT INTO Order_Items VALUES
+(377,177,23,2,800);
+
+INSERT INTO Order_Items VALUES
+(378,178,27,1,1500);
+
+INSERT INTO Order_Items VALUES
+(379,179,29,2,500);
+
+INSERT INTO Order_Items VALUES
+(380,180,20,1,1200);
+
+
+INSERT INTO Order_Items VALUES
+(381,181,25,1,8000);
+
+INSERT INTO Order_Items VALUES
+(382,182,30,2,1000);
+
+INSERT INTO Order_Items VALUES
+(383,183,5,1,5000);
+
+INSERT INTO Order_Items VALUES
+(384,184,9,2,3000);
+
+INSERT INTO Order_Items VALUES
+(385,185,13,1,12000);
+
+INSERT INTO Order_Items VALUES
+(386,186,17,2,2500);
+
+INSERT INTO Order_Items VALUES
+(387,187,21,1,2000);
+
+INSERT INTO Order_Items VALUES
+(388,188,26,1,30000);
+
+INSERT INTO Order_Items VALUES
+(389,189,28,2,6000);
+
+INSERT INTO Order_Items VALUES
+(390,190,2,1,65000);
+
+
+INSERT INTO Order_Items VALUES
+(391,191,3,1,55000);
+
+INSERT INTO Order_Items VALUES
+(392,192,7,2,1500);
+
+INSERT INTO Order_Items VALUES
+(393,193,11,1,1000);
+
+INSERT INTO Order_Items VALUES
+(394,194,24,2,400);
+
+INSERT INTO Order_Items VALUES
+(395,195,1,1,70000);
+
+INSERT INTO Order_Items VALUES
+(396,196,5,2,5000);
+
+INSERT INTO Order_Items VALUES
+(397,197,9,1,3000);
+
+INSERT INTO Order_Items VALUES
+(398,198,13,2,12000);
+
+INSERT INTO Order_Items VALUES
+(399,199,17,1,2500);
+
+INSERT INTO Order_Items VALUES
+(400,200,25,1,8000);
+
+COMMIT;
+
+
+------------------------------------------------------
+-- PART 2.7 : PAYMENTS DATA (1-200)
+------------------------------------------------------
+
+INSERT INTO Payments VALUES
+(1,1,DATE '2025-01-15','UPI',70000);
+
+INSERT INTO Payments VALUES
+(2,2,DATE '2025-01-16','Credit Card',65000);
+
+INSERT INTO Payments VALUES
+(3,3,DATE '2025-01-18','Debit Card',55000);
+
+INSERT INTO Payments VALUES
+(4,4,DATE '2025-01-20','UPI',1600);
+
+INSERT INTO Payments VALUES
+(5,5,DATE '2025-01-22','Cash',3000);
+
+INSERT INTO Payments VALUES
+(6,6,DATE '2025-01-25','UPI',4000);
+
+INSERT INTO Payments VALUES
+(7,7,DATE '2025-01-28','Credit Card',1200);
+
+INSERT INTO Payments VALUES
+(8,8,DATE '2025-02-01','Debit Card',1200);
+
+INSERT INTO Payments VALUES
+(9,9,DATE '2025-02-03','UPI',8000);
+
+INSERT INTO Payments VALUES
+(10,10,DATE '2025-02-05','Credit Card',2000);
+
+
+INSERT INTO Payments VALUES
+(11,11,DATE '2025-02-08','UPI',5000);
+
+INSERT INTO Payments VALUES
+(12,12,DATE '2025-02-10','Debit Card',1500);
+
+INSERT INTO Payments VALUES
+(13,13,DATE '2025-02-12','Credit Card',5000);
+
+INSERT INTO Payments VALUES
+(14,14,DATE '2025-02-15','UPI',12000);
+
+INSERT INTO Payments VALUES
+(15,15,DATE '2025-02-18','Cash',900);
+
+INSERT INTO Payments VALUES
+(16,16,DATE '2025-02-20','UPI',1400);
+
+INSERT INTO Payments VALUES
+(17,17,DATE '2025-02-22','Debit Card',2100);
+
+INSERT INTO Payments VALUES
+(18,18,DATE '2025-02-25','UPI',800);
+
+INSERT INTO Payments VALUES
+(19,19,DATE '2025-02-28','Credit Card',30000);
+
+INSERT INTO Payments VALUES
+(20,20,DATE '2025-03-02','UPI',6000);
+
+
+INSERT INTO Payments VALUES
+(21,21,DATE '2025-03-05','UPI',70000);
+
+INSERT INTO Payments VALUES
+(22,22,DATE '2025-03-08','Debit Card',50000);
+
+INSERT INTO Payments VALUES
+(23,23,DATE '2025-03-10','Credit Card',2400);
+
+INSERT INTO Payments VALUES
+(24,24,DATE '2025-03-12','UPI',1000);
+
+INSERT INTO Payments VALUES
+(25,25,DATE '2025-03-15','Cash',7000);
+
+INSERT INTO Payments VALUES
+(26,26,DATE '2025-03-18','UPI',2500);
+
+INSERT INTO Payments VALUES
+(27,27,DATE '2025-03-20','Debit Card',1600);
+
+INSERT INTO Payments VALUES
+(28,28,DATE '2025-03-22','Credit Card',2000);
+
+INSERT INTO Payments VALUES
+(29,29,DATE '2025-03-25','UPI',1600);
+
+INSERT INTO Payments VALUES
+(30,30,DATE '2025-03-28','Cash',1500);
+
+
+INSERT INTO Payments VALUES
+(31,31,DATE '2025-04-01','UPI',500);
+
+INSERT INTO Payments VALUES
+(32,32,DATE '2025-04-03','Debit Card',2000);
+
+INSERT INTO Payments VALUES
+(33,33,DATE '2025-04-05','Credit Card',65000);
+
+INSERT INTO Payments VALUES
+(34,34,DATE '2025-04-08','UPI',55000);
+
+INSERT INTO Payments VALUES
+(35,35,DATE '2025-04-10','Cash',10000);
+
+INSERT INTO Payments VALUES
+(36,36,DATE '2025-04-12','UPI',2400);
+
+INSERT INTO Payments VALUES
+(37,37,DATE '2025-04-15','Debit Card',3000);
+
+INSERT INTO Payments VALUES
+(38,38,DATE '2025-04-18','Credit Card',8000);
+
+INSERT INTO Payments VALUES
+(39,39,DATE '2025-04-20','UPI',600);
+
+INSERT INTO Payments VALUES
+(40,40,DATE '2025-04-22','Cash',2400);
+
+
+INSERT INTO Payments VALUES
+(41,41,DATE '2025-04-25','UPI',8000);
+
+INSERT INTO Payments VALUES
+(42,42,DATE '2025-04-28','Debit Card',1000);
+
+INSERT INTO Payments VALUES
+(43,43,DATE '2025-05-01','Credit Card',3000);
+
+INSERT INTO Payments VALUES
+(44,44,DATE '2025-05-03','UPI',2500);
+
+INSERT INTO Payments VALUES
+(45,45,DATE '2025-05-05','Cash',14000);
+
+INSERT INTO Payments VALUES
+(46,46,DATE '2025-05-08','UPI',900);
+
+INSERT INTO Payments VALUES
+(47,47,DATE '2025-05-10','Debit Card',2100);
+
+INSERT INTO Payments VALUES
+(48,48,DATE '2025-05-12','Credit Card',700);
+
+INSERT INTO Payments VALUES
+(49,49,DATE '2025-05-15','UPI',1400);
+
+INSERT INTO Payments VALUES
+(50,50,DATE '2025-05-18','Cash',30000);
+
+INSERT INTO Payments VALUES
+(51,51,DATE '2025-05-20','UPI',70000);
+
+INSERT INTO Payments VALUES
+(52,52,DATE '2025-05-22','Credit Card',65000);
+
+INSERT INTO Payments VALUES
+(53,53,DATE '2025-05-25','Debit Card',55000);
+
+INSERT INTO Payments VALUES
+(54,54,DATE '2025-05-28','UPI',50000);
+
+INSERT INTO Payments VALUES
+(55,55,DATE '2025-06-01','Cash',10000);
+
+INSERT INTO Payments VALUES
+(56,56,DATE '2025-06-03','UPI',1600);
+
+INSERT INTO Payments VALUES
+(57,57,DATE '2025-06-05','Credit Card',1500);
+
+INSERT INTO Payments VALUES
+(58,58,DATE '2025-06-08','Debit Card',2400);
+
+INSERT INTO Payments VALUES
+(59,59,DATE '2025-06-10','UPI',6000);
+
+INSERT INTO Payments VALUES
+(60,60,DATE '2025-06-12','Credit Card',2500);
+
+
+INSERT INTO Payments VALUES
+(61,61,DATE '2025-06-15','UPI',2000);
+
+INSERT INTO Payments VALUES
+(62,62,DATE '2025-06-18','Debit Card',4000);
+
+INSERT INTO Payments VALUES
+(63,63,DATE '2025-06-20','Credit Card',12000);
+
+INSERT INTO Payments VALUES
+(64,64,DATE '2025-06-22','UPI',14000);
+
+INSERT INTO Payments VALUES
+(65,65,DATE '2025-06-25','Cash',1200);
+
+INSERT INTO Payments VALUES
+(66,66,DATE '2025-06-28','UPI',1800);
+
+INSERT INTO Payments VALUES
+(67,67,DATE '2025-07-01','Debit Card',2500);
+
+INSERT INTO Payments VALUES
+(68,68,DATE '2025-07-03','Credit Card',2100);
+
+INSERT INTO Payments VALUES
+(69,69,DATE '2025-07-05','UPI',1600);
+
+INSERT INTO Payments VALUES
+(70,70,DATE '2025-07-08','Cash',1200);
+
+
+INSERT INTO Payments VALUES
+(71,71,DATE '2025-07-10','UPI',2000);
+
+INSERT INTO Payments VALUES
+(72,72,DATE '2025-07-12','Debit Card',1400);
+
+INSERT INTO Payments VALUES
+(73,73,DATE '2025-07-15','Credit Card',1600);
+
+INSERT INTO Payments VALUES
+(74,74,DATE '2025-07-18','UPI',800);
+
+INSERT INTO Payments VALUES
+(75,75,DATE '2025-07-20','Cash',16000);
+
+INSERT INTO Payments VALUES
+(76,76,DATE '2025-07-22','UPI',30000);
+
+INSERT INTO Payments VALUES
+(77,77,DATE '2025-07-25','Debit Card',3000);
+
+INSERT INTO Payments VALUES
+(78,78,DATE '2025-07-28','Credit Card',6000);
+
+INSERT INTO Payments VALUES
+(79,79,DATE '2025-08-01','UPI',1000);
+
+INSERT INTO Payments VALUES
+(80,80,DATE '2025-08-03','Cash',1000);
+
+
+INSERT INTO Payments VALUES
+(81,81,DATE '2025-08-05','UPI',70000);
+
+INSERT INTO Payments VALUES
+(82,82,DATE '2025-08-08','Debit Card',5000);
+
+INSERT INTO Payments VALUES
+(83,83,DATE '2025-08-10','Credit Card',6000);
+
+INSERT INTO Payments VALUES
+(84,84,DATE '2025-08-12','UPI',12000);
+
+INSERT INTO Payments VALUES
+(85,85,DATE '2025-08-15','Cash',5000);
+
+INSERT INTO Payments VALUES
+(86,86,DATE '2025-08-18','UPI',4000);
+
+INSERT INTO Payments VALUES
+(87,87,DATE '2025-08-20','Debit Card',8000);
+
+INSERT INTO Payments VALUES
+(88,88,DATE '2025-08-22','Credit Card',2000);
+
+INSERT INTO Payments VALUES
+(89,89,DATE '2025-08-25','UPI',800);
+
+INSERT INTO Payments VALUES
+(90,90,DATE '2025-08-28','Cash',2500);
+
+
+INSERT INTO Payments VALUES
+(91,91,DATE '2025-09-01','UPI',7000);
+
+INSERT INTO Payments VALUES
+(92,92,DATE '2025-09-03','Debit Card',1400);
+
+INSERT INTO Payments VALUES
+(93,93,DATE '2025-09-05','Credit Card',700);
+
+INSERT INTO Payments VALUES
+(94,94,DATE '2025-09-08','UPI',30000);
+
+INSERT INTO Payments VALUES
+(95,95,DATE '2025-09-10','Cash',6000);
+
+INSERT INTO Payments VALUES
+(96,96,DATE '2025-09-12','UPI',65000);
+
+INSERT INTO Payments VALUES
+(97,97,DATE '2025-09-15','Debit Card',55000);
+
+INSERT INTO Payments VALUES
+(98,98,DATE '2025-09-18','Credit Card',3000);
+
+INSERT INTO Payments VALUES
+(99,99,DATE '2025-09-20','UPI',1000);
+
+INSERT INTO Payments VALUES
+(100,100,DATE '2025-09-22','Cash',800);
+
+INSERT INTO Payments VALUES
+(101,101,DATE '2025-09-25','UPI',70000);
+
+INSERT INTO Payments VALUES
+(102,102,DATE '2025-09-28','Credit Card',10000);
+
+INSERT INTO Payments VALUES
+(103,103,DATE '2025-10-01','Debit Card',3000);
+
+INSERT INTO Payments VALUES
+(104,104,DATE '2025-10-03','UPI',24000);
+
+INSERT INTO Payments VALUES
+(105,105,DATE '2025-10-05','Cash',2500);
+
+INSERT INTO Payments VALUES
+(106,106,DATE '2025-10-08','UPI',4000);
+
+INSERT INTO Payments VALUES
+(107,107,DATE '2025-10-10','Debit Card',8000);
+
+INSERT INTO Payments VALUES
+(108,108,DATE '2025-10-12','Credit Card',2000);
+
+INSERT INTO Payments VALUES
+(109,109,DATE '2025-10-15','UPI',6000);
+
+INSERT INTO Payments VALUES
+(110,110,DATE '2025-10-18','Cash',2500);
+
+
+INSERT INTO Payments VALUES
+(111,111,DATE '2025-10-20','UPI',7000);
+
+INSERT INTO Payments VALUES
+(112,112,DATE '2025-10-22','Debit Card',8000);
+
+INSERT INTO Payments VALUES
+(113,113,DATE '2025-10-25','Credit Card',12000);
+
+INSERT INTO Payments VALUES
+(114,114,DATE '2025-10-28','UPI',14000);
+
+INSERT INTO Payments VALUES
+(115,115,DATE '2025-11-01','Cash',1200);
+
+INSERT INTO Payments VALUES
+(116,116,DATE '2025-11-03','UPI',900);
+
+INSERT INTO Payments VALUES
+(117,117,DATE '2025-11-05','Debit Card',5000);
+
+INSERT INTO Payments VALUES
+(118,118,DATE '2025-11-08','Credit Card',700);
+
+INSERT INTO Payments VALUES
+(119,119,DATE '2025-11-10','UPI',1600);
+
+INSERT INTO Payments VALUES
+(120,120,DATE '2025-11-12','Cash',1200);
+
+
+INSERT INTO Payments VALUES
+(121,121,DATE '2025-11-15','UPI',70000);
+
+INSERT INTO Payments VALUES
+(122,122,DATE '2025-11-18','Debit Card',50000);
+
+INSERT INTO Payments VALUES
+(123,123,DATE '2025-11-20','Credit Card',2400);
+
+INSERT INTO Payments VALUES
+(124,124,DATE '2025-11-22','UPI',4000);
+
+INSERT INTO Payments VALUES
+(125,125,DATE '2025-11-25','Cash',1800);
+
+INSERT INTO Payments VALUES
+(126,126,DATE '2025-11-28','UPI',30000);
+
+INSERT INTO Payments VALUES
+(127,127,DATE '2025-12-01','Debit Card',1500);
+
+INSERT INTO Payments VALUES
+(128,128,DATE '2025-12-03','Credit Card',12000);
+
+INSERT INTO Payments VALUES
+(129,129,DATE '2025-12-05','UPI',500);
+
+INSERT INTO Payments VALUES
+(130,130,DATE '2025-12-08','Cash',1200);
+
+
+INSERT INTO Payments VALUES
+(131,131,DATE '2025-12-10','UPI',70000);
+
+INSERT INTO Payments VALUES
+(132,132,DATE '2025-12-12','Debit Card',10000);
+
+INSERT INTO Payments VALUES
+(133,133,DATE '2025-12-15','Credit Card',3000);
+
+INSERT INTO Payments VALUES
+(134,134,DATE '2025-12-18','UPI',24000);
+
+INSERT INTO Payments VALUES
+(135,135,DATE '2025-12-20','Cash',2500);
+
+INSERT INTO Payments VALUES
+(136,136,DATE '2025-12-22','UPI',4000);
+
+INSERT INTO Payments VALUES
+(137,137,DATE '2025-12-25','Debit Card',8000);
+
+INSERT INTO Payments VALUES
+(138,138,DATE '2025-12-28','Credit Card',2000);
+
+INSERT INTO Payments VALUES
+(139,139,DATE '2026-01-02','UPI',800);
+
+INSERT INTO Payments VALUES
+(140,140,DATE '2026-01-05','Cash',2500);
+
+
+INSERT INTO Payments VALUES
+(141,141,DATE '2026-01-08','UPI',7000);
+
+INSERT INTO Payments VALUES
+(142,142,DATE '2026-01-10','Debit Card',1400);
+
+INSERT INTO Payments VALUES
+(143,143,DATE '2026-01-12','Credit Card',700);
+
+INSERT INTO Payments VALUES
+(144,144,DATE '2026-01-15','UPI',30000);
+
+INSERT INTO Payments VALUES
+(145,145,DATE '2026-01-18','Cash',6000);
+
+INSERT INTO Payments VALUES
+(146,146,DATE '2026-01-20','UPI',65000);
+
+INSERT INTO Payments VALUES
+(147,147,DATE '2026-01-22','Debit Card',55000);
+
+INSERT INTO Payments VALUES
+(148,148,DATE '2026-01-25','Credit Card',3000);
+
+INSERT INTO Payments VALUES
+(149,149,DATE '2026-01-28','UPI',1000);
+
+INSERT INTO Payments VALUES
+(150,150,DATE '2026-02-01','Cash',800);
+
+INSERT INTO Payments VALUES
+(151,151,DATE '2026-02-05','UPI',70000);
+
+INSERT INTO Payments VALUES
+(152,152,DATE '2026-02-08','Credit Card',10000);
+
+INSERT INTO Payments VALUES
+(153,153,DATE '2026-02-10','Debit Card',3000);
+
+INSERT INTO Payments VALUES
+(154,154,DATE '2026-02-12','UPI',50000);
+
+INSERT INTO Payments VALUES
+(155,155,DATE '2026-02-15','Cash',15000);
+
+INSERT INTO Payments VALUES
+(156,156,DATE '2026-02-18','UPI',1600);
+
+INSERT INTO Payments VALUES
+(157,157,DATE '2026-02-20','Debit Card',1500);
+
+INSERT INTO Payments VALUES
+(158,158,DATE '2026-02-22','Credit Card',2400);
+
+INSERT INTO Payments VALUES
+(159,159,DATE '2026-02-25','UPI',3000);
+
+INSERT INTO Payments VALUES
+(160,160,DATE '2026-02-28','Cash',2500);
+
+
+INSERT INTO Payments VALUES
+(161,161,DATE '2026-03-02','UPI',1000);
+
+INSERT INTO Payments VALUES
+(162,162,DATE '2026-03-05','Debit Card',8000);
+
+INSERT INTO Payments VALUES
+(163,163,DATE '2026-03-08','Credit Card',12000);
+
+INSERT INTO Payments VALUES
+(164,164,DATE '2026-03-10','UPI',14000);
+
+INSERT INTO Payments VALUES
+(165,165,DATE '2026-03-12','Cash',1200);
+
+INSERT INTO Payments VALUES
+(166,166,DATE '2026-03-15','UPI',1800);
+
+INSERT INTO Payments VALUES
+(167,167,DATE '2026-03-18','Debit Card',2500);
+
+INSERT INTO Payments VALUES
+(168,168,DATE '2026-03-20','Credit Card',2100);
+
+INSERT INTO Payments VALUES
+(169,169,DATE '2026-03-22','UPI',1600);
+
+INSERT INTO Payments VALUES
+(170,170,DATE '2026-03-25','Cash',1200);
+
+
+INSERT INTO Payments VALUES
+(171,171,DATE '2026-03-28','UPI',2000);
+
+INSERT INTO Payments VALUES
+(172,172,DATE '2026-04-01','Debit Card',1400);
+
+INSERT INTO Payments VALUES
+(173,173,DATE '2026-04-03','Credit Card',1600);
+
+INSERT INTO Payments VALUES
+(174,174,DATE '2026-04-05','UPI',800);
+
+INSERT INTO Payments VALUES
+(175,175,DATE '2026-04-08','Cash',16000);
+
+INSERT INTO Payments VALUES
+(176,176,DATE '2026-04-10','UPI',30000);
+
+INSERT INTO Payments VALUES
+(177,177,DATE '2026-04-12','Debit Card',3000);
+
+INSERT INTO Payments VALUES
+(178,178,DATE '2026-04-15','Credit Card',6000);
+
+INSERT INTO Payments VALUES
+(179,179,DATE '2026-04-18','UPI',1000);
+
+INSERT INTO Payments VALUES
+(180,180,DATE '2026-04-20','Cash',1000);
+
+
+INSERT INTO Payments VALUES
+(181,181,DATE '2026-04-22','UPI',70000);
+
+INSERT INTO Payments VALUES
+(182,182,DATE '2026-04-25','Debit Card',5000);
+
+INSERT INTO Payments VALUES
+(183,183,DATE '2026-04-28','Credit Card',6000);
+
+INSERT INTO Payments VALUES
+(184,184,DATE '2026-05-01','UPI',12000);
+
+INSERT INTO Payments VALUES
+(185,185,DATE '2026-05-03','Cash',5000);
+
+INSERT INTO Payments VALUES
+(186,186,DATE '2026-05-05','UPI',4000);
+
+INSERT INTO Payments VALUES
+(187,187,DATE '2026-05-08','Debit Card',8000);
+
+INSERT INTO Payments VALUES
+(188,188,DATE '2026-05-10','Credit Card',2000);
+
+INSERT INTO Payments VALUES
+(189,189,DATE '2026-05-12','UPI',800);
+
+INSERT INTO Payments VALUES
+(190,190,DATE '2026-05-15','Cash',2500);
+
+
+INSERT INTO Payments VALUES
+(191,191,DATE '2026-05-18','UPI',7000);
+
+INSERT INTO Payments VALUES
+(192,192,DATE '2026-05-20','Debit Card',1400);
+
+INSERT INTO Payments VALUES
+(193,193,DATE '2026-05-22','Credit Card',700);
+
+INSERT INTO Payments VALUES
+(194,194,DATE '2026-05-25','UPI',30000);
+
+INSERT INTO Payments VALUES
+(195,195,DATE '2026-05-28','Cash',6000);
+
+INSERT INTO Payments VALUES
+(196,196,DATE '2026-06-01','UPI',65000);
+
+INSERT INTO Payments VALUES
+(197,197,DATE '2026-06-03','Debit Card',55000);
+
+INSERT INTO Payments VALUES
+(198,198,DATE '2026-06-05','Credit Card',3000);
+
+INSERT INTO Payments VALUES
+(199,199,DATE '2026-06-08','UPI',1000);
+
+INSERT INTO Payments VALUES
+(200,200,DATE '2026-06-10','Cash',8000);
+
+COMMIT;
+

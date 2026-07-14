@@ -1,0 +1,136 @@
+/*=====================================================
+        E-COMMERCE SALES ANALYSIS DATABASE
+=====================================================*/
+
+------------------------------------------------------
+-- 1. CUSTOMERS
+------------------------------------------------------
+
+CREATE TABLE Customers
+(
+    customer_id NUMBER PRIMARY KEY,
+    customer_name VARCHAR2(100) NOT NULL,
+    email VARCHAR2(100) UNIQUE,
+    phone VARCHAR2(15),
+    city VARCHAR2(50),
+    registration_date DATE
+);
+
+------------------------------------------------------
+-- 2. CATEGORIES
+------------------------------------------------------
+
+CREATE TABLE Categories
+(
+    category_id NUMBER PRIMARY KEY,
+    category_name VARCHAR2(50) UNIQUE
+);
+
+------------------------------------------------------
+-- 3. PRODUCTS
+------------------------------------------------------
+
+CREATE TABLE Products
+(
+    product_id NUMBER PRIMARY KEY,
+    product_name VARCHAR2(100),
+    category_id NUMBER,
+    price NUMBER(10,2),
+    stock NUMBER,
+
+    CONSTRAINT fk_category
+    FOREIGN KEY(category_id)
+    REFERENCES Categories(category_id)
+);
+
+------------------------------------------------------
+-- 4. SHIPPERS
+------------------------------------------------------
+
+CREATE TABLE Shippers
+(
+    shipper_id NUMBER PRIMARY KEY,
+    shipper_name VARCHAR2(100),
+    contact_no VARCHAR2(15)
+);
+
+------------------------------------------------------
+-- 5. ORDERS
+------------------------------------------------------
+
+CREATE TABLE Orders
+(
+    order_id NUMBER PRIMARY KEY,
+    customer_id NUMBER,
+    order_date DATE,
+    shipper_id NUMBER,
+    order_status VARCHAR2(20),
+
+    CONSTRAINT fk_customer
+    FOREIGN KEY(customer_id)
+    REFERENCES Customers(customer_id),
+
+    CONSTRAINT fk_shipper
+    FOREIGN KEY(shipper_id)
+    REFERENCES Shippers(shipper_id)
+);
+
+------------------------------------------------------
+-- 6. ORDER_ITEMS
+------------------------------------------------------
+
+CREATE TABLE Order_Items
+(
+    order_item_id NUMBER PRIMARY KEY,
+    order_id NUMBER,
+    product_id NUMBER,
+    quantity NUMBER,
+    unit_price NUMBER(10,2),
+
+    CONSTRAINT fk_order
+    FOREIGN KEY(order_id)
+    REFERENCES Orders(order_id),
+
+    CONSTRAINT fk_product
+    FOREIGN KEY(product_id)
+    REFERENCES Products(product_id)
+);
+
+------------------------------------------------------
+-- 7. PAYMENTS
+------------------------------------------------------
+
+CREATE TABLE Payments
+(
+    payment_id NUMBER PRIMARY KEY,
+    order_id NUMBER,
+    payment_date DATE,
+    payment_method VARCHAR2(30),
+    amount NUMBER(10,2),
+
+    CONSTRAINT fk_payment_order
+    FOREIGN KEY(order_id)
+    REFERENCES Orders(order_id)
+);
+
+------------------------------------------------------
+-- 8. REVIEWS
+------------------------------------------------------
+
+CREATE TABLE Reviews
+(
+    review_id NUMBER PRIMARY KEY,
+    customer_id NUMBER,
+    product_id NUMBER,
+    rating NUMBER(1),
+    review_date DATE,
+
+    CONSTRAINT fk_review_customer
+    FOREIGN KEY(customer_id)
+    REFERENCES Customers(customer_id),
+
+    CONSTRAINT fk_review_product
+    FOREIGN KEY(product_id)
+    REFERENCES Products(product_id)
+);
+
